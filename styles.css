@@ -307,3 +307,8 @@ hr {
     grid-template-columns: 1fr;
   }
 }
+
+.text-center {
+  text-align: center;
+  margin: 10px;
+}
