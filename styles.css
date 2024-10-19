@@ -312,3 +312,49 @@ hr {
   text-align: center;
   margin: 10px;
 }
+
+/* NOTICIAS  */
+
+.box-article {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.article-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.article-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.article-description {
+  font-size: 16px;
+  color: #666;
+}
+
+/* BOTON PARA VOLVER AL INDEX  */
+.btn-return {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 0 20px 0;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-return:hover {
+  opacity: 0.8;
+}
