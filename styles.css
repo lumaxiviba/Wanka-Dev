@@ -38,9 +38,11 @@ ul {
   align-items: center;
   height: 60px;
   padding: 20px 0;
+  z-index: 10;
 }
 .nav-brand {
   width: 30px;
+  z-index: 10;
 }
 
 /* Navegación Izquierda */
@@ -396,4 +398,64 @@ hr {
 
 .wankadev-highlight {
   color: #e74c3c;
+}
+
+/* BUSCADOR DE CONTENIDO */
+#ctn-bars-search {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 9;
+  top: -100px;
+  transition: all 500ms;
+  margin-left: -67px;
+}
+
+#ctn-bars-search input {
+  display: block;
+  width: 1200px;
+  margin: auto;
+  padding: 10px;
+  font-size: 18px;
+  outline: 0;
+  margin-left: 55px;
+}
+
+#box-search {
+  position: fixed;
+  top: 165px;
+  width: 1216px;
+  background-color: #fff;
+  z-index: 8;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+#box-search li a {
+  display: block;
+  width: 1200px;
+  color: #777;
+  padding: 15px 20px;
+}
+
+#box-search li a:hover {
+  background-color: #f3f3f3;
+}
+
+#box-search li a i {
+  margin-right: 10px;
+  color: #777;
+}
+
+#cover-ctn-search {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
 }
