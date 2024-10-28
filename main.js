@@ -42,3 +42,26 @@ function ocultar_buscador() {
   cover_ctn_search.style.display = "none";
   input_search.value = "";
 }
+
+//Creando mi filtrado de busqueda
+document
+  .getElementById("inputSearch")
+  .addEventListener("keyup", buscador_interno);
+
+function buscador_interno() {
+  let filter = input_search.value.toUpperCase();
+  let li = box_search.getElementsByTagName("li");
+
+  //Recorriendo elementos a filtrar
+  for (i = 0; i < li.length; i++) {
+    let a = li[i].getElementsByTagName("a")[0];
+    let text_value = a.textContent || a.innerText;
+
+    if (text_value.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+      box_search.style.display = "block";
+    }
+  }
+}

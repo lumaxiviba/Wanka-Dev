@@ -38,7 +38,7 @@ ul {
   align-items: center;
   height: 60px;
   padding: 20px 0;
-  z-index: 10;
+  z-index: 11;
 }
 .nav-brand {
   width: 30px;
@@ -402,7 +402,7 @@ hr {
 
 /* BUSCADOR DE CONTENIDO */
 #ctn-bars-search {
-  position: fixed;
+  position: absolute;
   top: 80px;
   width: 100%;
   background-color: #fff;
