@@ -34,6 +34,9 @@ function mostrarBuscador() {
   bars_search.style.top = "80px";
   cover_ctn_search.style.display = "block";
   input_search.focus();
+  if (input_search.value === "") {
+    box_search.style.display = "none";
+  }
 }
 
 //Función para ocultar el buscador
@@ -41,6 +44,7 @@ function ocultar_buscador() {
   bars_search.style.top = "-100px";
   cover_ctn_search.style.display = "none";
   input_search.value = "";
+  box_search.style.display = "none";
 }
 
 //Creando mi filtrado de busqueda
@@ -59,9 +63,12 @@ function buscador_interno() {
 
     if (text_value.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
+      box_search.style.display = "block";
+      if (input_search.value === "") {
+        box_search.style.display = "none";
+      }
     } else {
       li[i].style.display = "none";
-      box_search.style.display = "block";
     }
   }
 }
